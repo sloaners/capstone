@@ -1,22 +1,29 @@
 /*** General Declarations  ***/
+body {
+    font-size: 16px;
+}
 
 .container {
-    margin: 0 24px;
+    margin: 0 1.5rem;
 }
 
 /*  Header Section */
 header {
     display: flex;
     align-items: center;
-    background-color: pink;
-    height: 64px;
+    background-color: white;
+    height: 4rem;
 }
 
 .logo {
     flex-grow: 1;
-    height: 32px;
+    height: 2rem;
     display: flex;
     align-items: center;
+}
+
+.bold {
+    font-weight: bold;
 }
 
 nav a {
@@ -26,7 +33,41 @@ nav a {
 
 nav li {
     display: inline;
-    margin-left: 16px;
+    margin-left: 1rem;
 }
 
 /* Start Here Section */
+.banner {
+    background-color: lightgrey;
+    display: flex;
+}
+
+.banner-image {
+    padding: 2rem 1.5rem;
+    width: 60%;
+    overflow: hidden;
+}
+
+.banner-image img {
+    max-height: 100%;
+    max-width: 100%;
+}
+
+.cta {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.cta h1,
+h2 {
+    margin: 1.5rem 0;
+}
+
+.cta-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: darkgrey;
+    padding: 0.5rem 0;
+}
