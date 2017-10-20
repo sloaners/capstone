@@ -12,6 +12,11 @@ img {
     max-width: 100%;
 }
 
+.caption {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
 
 /*  Header Section */
 header {
@@ -109,12 +114,17 @@ h3 {
     margin: 1rem;
 }
 
-.caption {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
 .three {
     background-color: grey;
+}
+
+/* Course Section */
+.courses h1 {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.course-grid {
+    display: flex;
+    margin: 2rem 4.5rem;
 }
