@@ -7,6 +7,12 @@ body {
     margin: 0 1.5rem;
 }
 
+img {
+    max-height: 100%;
+    max-width: 100%;
+}
+
+
 /*  Header Section */
 header {
     display: flex;
@@ -48,10 +54,6 @@ nav li {
     overflow: hidden;
 }
 
-.banner-image img {
-    max-height: 100%;
-    max-width: 100%;
-}
 
 .cta {
     display: flex;
@@ -60,7 +62,7 @@ nav li {
 }
 
 .cta h1,
-h2 {
+h3 {
     margin: 1.5rem 0;
 }
 
@@ -70,4 +72,49 @@ h2 {
     align-items: center;
     background-color: darkgrey;
     padding: 0.5rem 0;
+}
+
+/* Article Section */
+.articles {
+    display: flex;
+}
+
+.main {
+    margin: 2rem 1.5rem;
+    width:60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.main h2 {
+    margin: 2rem 0 1.5rem 0;
+}
+
+.side {
+    width: 40%;
+    padding: 1rem 0 2rem 0;
+}
+
+.side .one, 
+.side .two, 
+.side .three {
+    display: flex;
+    align-items: center;
+}
+
+.side img {
+    width: 35%;
+    height: auto;
+    margin: 1rem;
+}
+
+.caption {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.three {
+    background-color: grey;
 }
