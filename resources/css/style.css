@@ -119,12 +119,36 @@ h3 {
 }
 
 /* Course Section */
+.courses {
+    background-color: grey;
+}
+
 .courses h1 {
     text-align: center;
-    margin-top: 2rem;
+    padding-top: 2rem;
 }
 
 .course-grid {
     display: flex;
-    margin: 2rem 4.5rem;
+    flex-wrap: wrap;
+    padding: 1rem 3.5rem;
+}
+
+/******** Course box */
+.course {
+    background-color: white;
+    margin: 1rem;
+    width: 30%;
+}
+
+.course img {
+    height: auto;
+}
+
+.course .caption {
+    padding: 1rem 0 1.5rem 1rem;
+}
+
+p.subtitle {
+    margin: 0.5rem 0;
 }
