@@ -2,6 +2,15 @@
 
 /* latin */
 @font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Montserrat Light'), local('Montserrat-Light'), url(https://fonts.gstatic.com/s/montserrat/v11/IVeH6A3MiFyaSEiudUMXE8u2Q0OS-KeTAWjgkS85mDg.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+
+/* latin */
+@font-face {
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 400;
@@ -58,16 +67,17 @@
 body {
     font-size: 16px;
     font-family: Montserrat;
+    color: #403F3D;
+
 }
 
-.container {
-    margin: 0 1.5rem;
+.cont-60 {
+    width: 60%;
 }
 
-img {
-    max-height: 100%;
+/* img {
     max-width: 100%;
-}
+} */
 
 .caption {
     display: flex;
@@ -128,11 +138,11 @@ nav li {
 }
 
 .banner-image {
-    padding: 2rem 1.5rem;
-    width: 60%;
-    overflow: hidden;
+    margin: 2rem 1.5rem;
+    background-image: url(../images/banner.jpg);
+    background-position: center;
+    background-size: cover;
 }
-
 
 .cta {
     display: flex;
@@ -184,7 +194,7 @@ nav li {
 
 .main {
     margin: 2rem 1.5rem;
-    width:60%;
+    max-width: 60%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -192,11 +202,24 @@ nav li {
 
 .main h2 {
     margin: 2rem 0 1.5rem 0;
+    font-size: 2.3rem;
+    font-weight: bold;
+}
+
+.main p {
+    line-height: 1.4rem;
+    font-weight: 300;
+    padding-bottom: 2.5rem;
+}
+
+.main p.author {
+    font-size: 0.75rem;
 }
 
 .side {
     width: 40%;
     padding: 1rem 0 2rem 0;
+    border-left: 1px solid rgba(191, 188, 184, 0.5);
 }
 
 .side .one, 
@@ -213,7 +236,7 @@ nav li {
 }
 
 .three {
-    background-color: grey;
+    background-color: #bfbcb8;
 }
 
 /* Course Section */
