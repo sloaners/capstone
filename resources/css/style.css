@@ -200,3 +200,17 @@ h1 {
     width: 35%;
     margin: 1rem;
 }
+
+/* Footer Section */
+footer {
+    border-top: 1px solid grey;
+    margin: 0 5px;
+    padding: 1rem 1.5rem;
+    display: flex;
+    justify-content: space-between;    
+}
+
+footer a {
+    text-decoration: none;
+    padding: 0 1rem;
+}
