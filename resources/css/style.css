@@ -155,14 +155,47 @@ p.subtitle {
 
 /* Exhibit Section */
 .exhibit {
+    padding: 0 1.5rem;
     display: flex;
 }
 
-.exhibit .side img {
+h1 {
+    text-align: center;
+    padding: 2rem 0;
+}
+ .main-exhibit {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+}
+
+.main-exhibit video {
+    padding-bottom: 1.5rem;
+}
+
+.side-exhibits {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    padding-left: 1.5rem;
+}
+
+.side-exhibit {
+    display: flex;
+    align-items: center;
+}
+
+.side-exhibit:first-child {
+    background-color: grey;
+}
+
+.side-exhibit figcaption {
+    display: flex;
+    flex-direction: column;
+    width: 65%;
+}
+
+.side-exhibit img {
     width: 35%;
-}
-
-.side-article {
-    display: flex;
-    
+    margin: 1rem;
 }
