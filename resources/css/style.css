@@ -68,7 +68,12 @@ body {
     font-size: 16px;
     font-family: Montserrat;
     color: #403F3D;
+}
 
+@media only screen and (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
 }
 
 .cont-60 {
@@ -83,6 +88,12 @@ body {
 
 .bold {
     font-weight: 900;
+}
+
+@media only screen and (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
 }
 
 /*  Header Section */
@@ -126,6 +137,28 @@ nav a:hover {
 nav li {
     display: inline;
     margin-left: 1rem;
+}
+
+.mobile {
+    display: none;
+}
+@media only screen and (max-width: 768px) {
+    #darkgrey,
+    #grey,
+    .desktop {
+        display: none;
+    }
+
+    .mobile {
+        display: block;
+    }
+    .logo {
+        flex-grow: 0;
+    }
+
+    header {
+        justify-content: space-between;
+    }
 }
 
 /* Start Here Section */
